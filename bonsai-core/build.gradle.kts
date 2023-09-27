@@ -14,7 +14,7 @@ kotlin {
                 compileOnly(compose.runtime)
                 compileOnly(compose.foundation)
                 compileOnly(compose.ui)
-                compileOnly(compose.materialIconsExtended)
+                implementation(compose.materialIconsExtended)
             }
         }
     }
