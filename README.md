@@ -178,6 +178,15 @@ Bonsai(
 )
 ```
 
+> [!NOTE]
+> Bonsai uses Compose Material Icons by default for styling so if you are going to do your own styling of your project, 
+> it is recommended that you remove it from being included transitively in your project by Bonsai
+> ```
+> implementation("cafe.adriel.bonsai:bonsai-core:${latest-version}") {
+>   exclude(group = "androidx.compose.material", module = "material-icons-extended")
+> }
+> ```
+
 Output:
 
 <img width=250 src="https://user-images.githubusercontent.com/2512298/164343259-0df574f6-e602-4bb1-93e2-c263fb1ee1ed.png">
